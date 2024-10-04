@@ -1,0 +1,59 @@
+.log_section_component h2{
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    line-height: 90px;
+    color: rgba(86, 106, 127, 1);
+}
+.log_section_component span{
+padding: 0 0 90px 0;
+color: rgba(170, 180, 191, 1);
+letter-spacing: 0.03em;
+font-size: 16px;
+line-height: 22px;
+font-weight: 400;
+}
+.log_section_component p{
+    padding: 0;
+    color: rgba(86, 106, 127, 1);
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    }
+
+.log_section_component a{
+font-weight: 600;
+color: #696CFF;
+}
+.login_form {
+    z-index: 2;
+}
+.login_form .input-container {
+
+}
+.login_form input::placeholder {
+    color:rgba(170, 180, 191, 1);
+
+}
+.login_form button{
+    margin-top: 100px;
+}
+
+.password_input {
+    position: relative;
+  }
+  .password_input img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+    transition: 0.3s;
+
+  }
+  .password_input img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+  }

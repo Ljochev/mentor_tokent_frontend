@@ -1,0 +1,15 @@
+.toggle_register {
+    /* width: 100%; */
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color:rgba(245, 245, 249, 1) ;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.toggle_register button{
+height: 2.5em;
+transition: 0.5s;
+}

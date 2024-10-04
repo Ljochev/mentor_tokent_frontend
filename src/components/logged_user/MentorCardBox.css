@@ -1,0 +1,15 @@
+.mentor_card_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+width: 65%;
+box-sizing: border-box;
+margin-top:  50px;
+height: 75vh;
+overflow-y: auto;
+scrollbar-width: thin; 
+scrollbar-color: rgba(105, 108, 255, 0.16) #f1f1f1; 
+}
+
+

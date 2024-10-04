@@ -1,0 +1,26 @@
+.company_mentors {
+    /* position: relative; */
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.company_mentors .searchQuery_form {
+    width: 50%;
+}
+
+.direct_job_screen {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.051);
+}

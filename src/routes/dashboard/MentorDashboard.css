@@ -1,0 +1,25 @@
+.mentor_dashboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.mentor_dashboard_left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 30px 0 20px;
+}
+
+
+
+.mentor_dashboard_right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 30px;
+}

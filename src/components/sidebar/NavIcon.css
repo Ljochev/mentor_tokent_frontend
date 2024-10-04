@@ -1,0 +1,27 @@
+.nav_icon {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0 15px 0 15px;
+    padding: 10px 10px 10px 30px ;
+    border-radius: 8px;
+
+}
+
+.nav_icon_background {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(105, 108, 255, 0.16);
+    width: 200px;
+    margin: 0 15px 0 15px;
+    padding: 10px 0 10px 30px ;
+    border-radius: 8px;
+
+
+}

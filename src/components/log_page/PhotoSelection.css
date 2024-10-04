@@ -1,0 +1,49 @@
+.photo_selection{
+    /* background-color: blueviolet; */
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.photo_selection:hover {
+    cursor: pointer;
+    }
+    
+.img_circle {
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 120px;
+    height: 120px;
+    z-index: 0;
+}
+
+.img_photo {
+    position: absolute;
+    top:-20px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+z-index: 3;
+border-radius: 50px;
+}
+
+.img_work {
+    position: absolute;
+    left: 37px;
+    top:37px;
+    width: 46px;
+    height: 46px;
+z-index: 1;
+}
+
+.img_account {
+    position: absolute;
+    left: 3px;
+    top:3px;
+    width: 114px;
+    height: 114px;
+    border-radius: 57px;
+z-index: 2;
+}

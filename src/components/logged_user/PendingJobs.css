@@ -1,0 +1,21 @@
+.pending_jobs {
+    margin-top: 50px;
+}
+
+.pending_jobs h2{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+  color: rgba(64, 77, 97, 1);
+  }
+  .pending_jobs p{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  margin: 18px 0;
+  padding: 10px 0;
+  color: rgba(64, 77, 97, 1);
+  /* border:1px solid black; */
+  }

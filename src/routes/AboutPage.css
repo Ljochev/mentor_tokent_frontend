@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  } 
+  .team_header {  
+  padding: 80px;
+  background-image: url('./../assets/home_page/unsplash_background.svg');
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-position:0px 0px;
+  width: screen;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.team_header h2{
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: rgba(34, 34, 34, 1);
+}  
+.team_header p{
+  text-align: center;
+  width: 750px;
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(34, 34, 34, 1);
+}
+.team_section{
+  margin: 20px;
+  padding: 80px;
+/* border: 1px solid black; */
+display: flex;  
+align-items:center;
+justify-content: center;
+flex-wrap: wrap;
+gap:20px
+}

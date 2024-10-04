@@ -1,0 +1,26 @@
+.mentor_statistics {
+display: flex;
+flex-direction: column;
+align-items: center;
+    padding: 0 40px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mentor_statistics_job_section {
+    display: flex;
+flex-direction: row;
+width: 100%;
+box-sizing: border-box;
+gap: 50px;
+}
+
+.job_section_left {
+width: 50%;
+box-sizing: border-box;
+}
+
+.job_section_right {
+    width: 50%;
+    box-sizing: border-box;
+}

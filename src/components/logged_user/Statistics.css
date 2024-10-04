@@ -1,0 +1,38 @@
+.performance_time {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.performance_time h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0;
+    padding-left: 5px;
+    color: rgba(64, 77, 97, 1);
+}
+.statistics_chart {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 21px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.statistics_chart h3{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(86, 106, 127, 1);
+}
+
+.statistics_chart p{
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    color: rgba(170, 180, 191, 1);
+}

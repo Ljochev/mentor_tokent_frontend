@@ -1,0 +1,40 @@
+.logo-class{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+}
+.logo-class:hover{
+    opacity: 0.75;
+     cursor: pointer;
+ }
+.logo-class h2 {
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 27.42px;
+}
+
+.logo-class svg {
+    width: 39px;
+    height: 39px;
+}
+.my-svg-logo path {
+    fill: white;
+}
+
+@media screen and (max-width: 700px) {
+ 
+    /* .logo-class h2 {
+        margin: 0;
+        font-weight: 600;
+        white-space: nowrap;
+        color: #696CFF;
+        font-size: 14px;
+    }
+    
+    .logo-class img {
+        width: 20px;
+        height: 20px;
+    } */
+}

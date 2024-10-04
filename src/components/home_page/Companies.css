@@ -1,0 +1,77 @@
+.companies-class{
+    margin: 100px 80px;
+    width: screen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.companies-logo{
+    width: 100%;
+    margin: 40px;
+    max-width: 1600px;
+    min-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    /* gap:6em; */
+}
+
+.companies-logo div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+.companies-logo img{
+    height: 40px;
+}
+.companies-class-top p{
+    margin: 0;
+    padding-top:  20px;
+    background: radial-gradient(91.58% 100% at 50% 50%, #232323 0%, rgba(35, 35, 35, 0.3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+@media screen and (max-width: 700px) {
+    .companies-class-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .companies-class{
+        margin: 20px;
+        width: screen;
+        display: flex;
+        flex-direction: row;
+    }
+    .companies-logo{
+        width: 180px;
+        margin: 0;
+        max-width: 350px;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .companies-logo div{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .companies-class-top p{
+        padding-top: 0;
+        background: radial-gradient(91.58% 100% at 50% 50%, #232323 0%, rgba(35, 35, 35, 0.3) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+}

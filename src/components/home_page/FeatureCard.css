@@ -1,0 +1,31 @@
+.card-class{
+    padding: 32px 32px 52px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    background: linear-gradient(284.56deg, rgba(204, 188, 252, 0.15) -2.05%, rgba(204, 188, 252, 0.15) 30.59%, rgba(204, 188, 252, 0.15) 64.71%, rgba(204, 188, 252, 0.15) 102.53%);
+    border: 1px solid #696CFF;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 11px 17px 0px;
+}
+.card-class img{
+width: 24px;
+margin: 0;
+padding: 0;
+}
+
+.card-class h5 {
+    margin: 34px 0 0 0;
+    font-weight: 700;
+    font-size: 20px;
+    /* letter-spacing: -2px; */
+}
+.card-class h6{
+    margin: 34px 0 0 0;
+    font-size: 15px;
+    width: 234px;
+    height: 54px;
+    letter-spacing: -0.02em;
+    line-height: 18px;
+    font-weight: 400;
+}

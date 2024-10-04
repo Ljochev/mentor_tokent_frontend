@@ -1,0 +1,119 @@
+.view_more_pending {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 150px; */
+}
+.view_card_pending{
+  /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    min-height: 600px;
+    height: fit-content;
+    /* padding: 30px 40px 80px 60px ; */
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+.view_more_pending .close_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.view_more_pending .close_icon img:hover{
+    cursor: pointer;
+    }
+
+    .view_more_pending .more_job_card_items {
+  width: inherit;
+  min-height: inherit;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+
+.view_card_pending .picture_name {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    padding-left: 70px;
+  }
+
+  .view_card_pending .picture_name img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px inset, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+
+  }
+
+  .view_card_pending .picture_name p{
+   margin: 0;
+   color: rgba(86, 106, 127, 1);
+   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  }
+
+  .view_card_pending .cart_job_name {
+    padding: 0 60px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    color: rgba(86, 106, 127, 1);
+    font-size: 15px;
+  }
+
+  .view_card_pending .cart_desc {
+    margin: 0;
+    padding: 0 60px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 95px;
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(105, 108, 255, 0.16) #f1f1f1; 
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    color: rgba(117, 125, 138, 1);
+    font-size: 13px;
+    /* border: 1px solid black; */
+
+  }
+.applied_mentors_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    max-height:  260px;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    overflow-y: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(105, 108, 255, 0.16) #f1f1f1; 
+    margin-bottom: 80px;
+    padding: 0 60px 0 60px;
+}
+

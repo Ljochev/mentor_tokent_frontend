@@ -1,0 +1,111 @@
+.mentor_jobfeed {
+    padding: 0 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 40px;
+ 
+}
+
+.mentor_jobfeed .searchQuery_form {
+    width: 50%;
+}
+.company_jobs {
+margin-top: 50px;
+display: flex;
+  flex-direction: column;
+}
+
+.company_jobs h2{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+  padding-left: 5px;
+  color: rgba(64, 77, 97, 1);
+  }
+
+.company_job_feed {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 23px;
+  row-gap: 25px; 
+}
+.job_feed_filter_section{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: inherit;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+.sorting_section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+}
+.sory_by_section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap:10px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0px 15px;
+  border-radius: 12px;
+  font-family: "Manrope", sans-serif;
+  height: 40px;
+}
+.sory_by_section:hover{
+cursor: pointer;
+}
+
+
+.sory_by_section p{
+margin: 0;
+font-weight: 600;
+font-size: 14px;
+color: rgba(86, 106, 127, 1);
+}
+
+.sory_by_section span{
+  margin: 0;
+font-weight: 400;
+font-size: 14px;
+color: rgba(170, 180, 191, 1);
+}
+.drop_down_selection{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2px;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  border:rgba(170, 180, 191, 0.3);
+  border-style: double;
+  padding: 5px;
+  cursor:default;
+}
+
+.drop_down_selection p{
+  color: rgba(170, 180, 191, 1);
+}
+
+.drop_down_selection p:hover{
+color: rgba(86, 106, 127, 1);
+cursor: pointer;
+}

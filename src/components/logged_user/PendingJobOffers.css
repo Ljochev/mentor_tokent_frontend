@@ -1,0 +1,22 @@
+.pending_offers {
+    margin-top: 50px;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.pending_offers h2{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+  padding-left: 5px;
+  color: rgba(64, 77, 97, 1);
+  }
+
+
+  .job_offers_list {
+    margin-top: 20px;
+    width: inherit;
+    box-sizing: border-box;
+}

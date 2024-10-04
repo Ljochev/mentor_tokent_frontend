@@ -1,0 +1,47 @@
+.register_form .input-container {
+margin-top: 5px;
+}
+.register_form {
+  position: relative;
+  z-index: 5;
+}
+.register_form button{
+    margin-top: 20px;
+    letter-spacing: 0em;
+    font-size: 1em;
+}
+.register_form label{
+font-size: 15px;
+/* color: rgba(86, 106, 127, 1); */
+}
+
+
+.register_form .img_vector {
+    width: 1em;
+    height: 1em;
+    filter: hue-rotate(180deg) brightness(0) saturate(100%) sepia(100%) hue-rotate(90deg);
+  }
+  .svg_path {
+    stroke: red;
+
+  }
+
+  ::placeholder {
+    opacity: 0.7;
+  }
+
+  .password_input {
+    position: relative;
+  }
+  .password_input img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .password_input img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+  }

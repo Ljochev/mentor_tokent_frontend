@@ -1,0 +1,66 @@
+.aplications_sent_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0 20px 0 15px;
+    margin-bottom: 7px;
+    width: inherit;
+    height: 55px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: "Nunito Sans", sans-serif;
+    box-shadow: 0px -0.94px 0px 0px rgba(228, 228, 239, 1) inset;
+    /* border: 1px solid black; */
+}
+.aplications_sent_card span {
+    color: rgba(86, 106, 127, 1);
+}
+
+
+.clock_time_rotate {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    gap:5px;
+}
+.clock_time_rotate p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 12px;
+    color: rgba(86, 106, 127, 1);
+
+}
+
+.clock_text {
+    opacity: 0.2;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    margin: 0;
+   
+}
+
+.clock_time_rotate:hover .clock_text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.aplications_sent_card button{
+background-color: inherit;
+border: 1px solid rgba(242, 7, 106, 1);
+border-radius: 7px;
+font-family: "Noto Sans", sans-serif;
+  font-size: 9.5px;
+  font-weight: 400;
+color: rgba(242, 7, 106, 1);
+margin: 0;
+padding: 5px 30px;
+}
+
+.aplications_sent_card button:hover{
+    background-color: rgba(234, 234, 235, 0.337);
+}
+
+.aplications_sent_card button:active{
+    background-color: rgba(234, 234, 235, 0.7);
+}

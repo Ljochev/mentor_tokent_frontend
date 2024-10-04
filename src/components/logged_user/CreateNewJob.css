@@ -1,0 +1,123 @@
+.create_job_form{
+    width: 500px;
+    height: fit-content;
+    padding:  30px 50px 50px 50px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    z-index: 200;
+    position: sticky;
+    top:50px;
+}
+
+.offer_job_text {
+    padding-bottom: 20px;
+}
+.create_job_form h2{
+    font-family: "Manrope", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: rgba(86, 106, 127, 1);
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.create_job_form span{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(86, 106, 127, 0.6);
+}
+
+.create_job_form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.create_job_form_cancel{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: end;
+}
+.create_job_form_cancel img:hover{
+cursor: pointer;
+}
+
+.text_area_description {
+    position: relative;
+}
+.text_area_description label {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 15px;
+    color: rgba(105, 108, 255, 0.8);
+
+  }
+
+  .text_area_description textarea {
+ padding: 20px; 
+}
+
+
+.category_selection_input select{
+    margin-left: 10px;
+    border-color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 14.67px;
+    font-weight: 500;
+    color: rgba(86, 106, 127, 1);
+}
+
+.category_selection_input label{
+    font-family: "Manrope", sans-serif;
+    font-size: 14.67px;
+    font-weight: 500;
+    color: rgba(86, 106, 127, 1);
+}
+
+.skill_section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+.skill_section .input-container{
+    margin: 0;
+}
+.skill_section .input-container input{
+    width:300px;
+}
+.skill_section button{
+    margin: 0;
+}
+
+.skills_display {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    z-index: 5;
+}
+.skills_display p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    height: 20px;
+    color: black;
+    margin-right: 10px;
+}
+.skills_display button {
+    margin: 0 5px;
+    padding: 0px 3px;
+    border-radius: 5px;
+    border-color: gray;
+}

@@ -1,0 +1,57 @@
+.mentor_Stats {
+    /* position: relative; */
+    padding: 0 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.mentor_Stats .searchQuery_form {
+    width: 50%;
+}
+
+.mentor_Stats_Down {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mentor_performance{
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.mentor_overview {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mentorEdit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding-top: 200px;
+}
+
+.editForm{
+    width: 500px;
+    height: fit-content;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 1);
+}

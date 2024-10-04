@@ -1,0 +1,30 @@
+.input-container {
+    position: relative;
+    margin: 20px 0;
+    z-index: 1;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 16px 16px 16px 24px;
+    border: 2px solid rgba(211, 211, 255, 1);
+    border-radius: 9px;
+    font-size: 17px;
+    box-sizing: border-box;
+  }
+  .input-container input:active{
+    border: 2px solid rgba(105, 108, 255, 1);
+}
+
+
+  .input-container label {
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 15px;
+    color: rgba(105, 108, 255, 0.8);
+
+  }
+

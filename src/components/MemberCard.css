@@ -1,0 +1,51 @@
+.member_card {
+    margin: 0 0 20px 0;
+font-family: "Inter";
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* border: 1px solid black; */
+}
+.member_card h3{
+    margin: 0;
+    padding: 24px 0 0 0;
+font-weight: 700;
+font-size: 22px;
+line-height: 34px;
+}
+
+.member_card h4{
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgba(105, 108, 255, 1);
+}
+
+.member_card p{
+    margin: 0;
+    padding: 24px 0;
+    width: 270px;
+    font-weight: 400;
+    color: rgba(120, 122, 130, 1);
+    text-align: center;
+    line-height: 30px;
+}
+.member_card img{
+width: 126px;
+height: 126px;
+border-radius: 63px;
+
+}
+.card_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+.card_social img{
+    width: 20px;
+    height: 20px;
+}

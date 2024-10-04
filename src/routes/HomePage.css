@@ -1,0 +1,226 @@
+main{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+} 
+.home-page-wrap {
+  position:relative;
+  width: screen;
+}
+.bg-scene{
+  position: absolute;
+  bottom: 0px;
+  right:20px;
+  width: 67%;
+  max-width: 935px;
+  min-width: 450px;
+  height: auto;
+  border-radius: 20px;
+}
+/* This class for the second page as well */
+.home_page_unsplash {
+  margin: 0 20px;
+  padding: 100px 80px;
+  background-image: url('./../assets/home_page/unsplash_background.svg');
+  background-size:cover ;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position:0px 0px;
+  width: screen;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 20px;
+}
+
+.unsplash_textbox{
+  /* height: 24em; */
+}
+.unsplash_textbox h1{
+  font-size:56px;
+  margin:0;
+  width: 614px;
+  height: 201px;
+  padding-bottom: 32px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  color: #232323;
+}
+.unsplash_textbox p{
+  margin: 0;
+  width: 614px;
+
+  height: 145px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 28.8px;
+  color: #232323;
+  opacity: 0.7;
+}
+
+.unsplash-get-started{
+  display: flex;
+  padding-top: 80px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.unsplash-get-started p{
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.unsplash-get-started p:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.home-buttom {
+  font-family: "Inter";
+  margin: 40px 100px 80px 100px; 
+}
+.home-buttom span{
+  padding: 20px;
+  font-weight: 500;
+  font-size: 40px;
+}
+.home-buttom span strong{
+  font-weight: 700;
+  color: #696CFF;
+}
+.buttom-img{
+  position: relative;
+  margin-top: 40px;
+  padding: 20px;
+  border: 5px solid rgba(105, 108, 255, 1);
+  border-radius: 60px;
+}
+.buttom-img img {
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+}
+.relative img{
+  width: 45%;
+  position: absolute;
+  top: -21%;
+  right:20px;
+
+}
+
+@media screen and (max-width: 700px) {
+
+  
+  .home-page-wrap {
+    position:relative;
+    width: screen;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .bg-scene{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right:-13%;
+    width: 67%;
+    max-width: 935px;
+    min-width: 350px;
+    border-radius: 20px;
+    /* overflow: hidden; */
+  }
+  /* This class for the second page as well */
+  .home_page_unsplash {
+    margin: 0;
+    padding: 26px 19px 80px 19px;
+    background-image: url('./../assets/home_page/unsplash_background.svg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position:0px 0px;
+    width: screen;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+  }
+ 
+  .unsplash_textbox h1{
+    font-size:30px;
+    font-weight: 700;
+    width: 330px;
+    height: auto;
+    padding-bottom: 36px;
+    line-height: 36px;
+    color: rgba(35, 35, 35, 1);
+
+  }
+  .unsplash_textbox p{
+    width: 330px;
+    height: auto;
+    font-weight: 400;
+    font-size: 12.67px;
+    line-height: 20.27px;
+    color: #232323;
+    opacity: 0.7;
+  }
+  
+  .unsplash-get-started{
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+  }
+  .unsplash-get-started p{
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 15.73px;
+    letter-spacing: -0.02em;
+  }
+  
+  .unsplash-get-started p:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .home-buttom {
+    font-family: "Inter";
+    margin: 20px 0px 20px 0px; 
+  }
+  .home-buttom span{
+    padding: 20px;
+    width: 170px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .home-buttom span strong{
+    padding: 0px;
+  }
+  .buttom-img{
+    position: relative;
+    margin-top: 40px;
+    padding: 5px;
+    border: 2px solid rgba(105, 108, 255, 1);
+    border-radius: 6%;
+  }
+  .buttom-img img {
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+  }
+  .relative img{
+    width: 45%;
+    position: absolute;
+    top: -21%;
+    right:20px;
+  
+  }
+}

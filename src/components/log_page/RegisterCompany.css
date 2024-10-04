@@ -1,0 +1,81 @@
+/* .company_register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+::placeholder {
+    opacity: 0.7;
+  }
+
+/* .back_button {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+} */
+
+.selection_photo_company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo_selection_input_company {
+    position: absolute;
+    top:50px;
+    /* border:1px solid black; */
+    max-width: 240px;
+}
+
+
+
+.register_company {
+    position: relative;
+    z-index: 1;
+}
+
+.register_company button{
+    margin: 80px 0 10px 0;
+
+}
+
+.selection_photo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo_selection_input {
+    position: absolute;
+    cursor: pointer;
+    top:-90px;
+    /* border:1px solid black; */
+    max-width: 240px;
+}
+
+.photo_selection_input #file-upload-button{
+    background-color: antiquewhite;
+}
+
+.policyTerms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.policyTerms span{
+    font-size: 12px;
+    padding: 0;
+}
+.policyTerms a{
+    font-size: 12px;
+    color: rgba(105, 108, 255, 1);
+}
+.policyTerms input{
+    margin: 0 1em 0 0 ;
+    z-index: 5;
+}
