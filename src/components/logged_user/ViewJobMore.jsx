@@ -5,7 +5,6 @@ import Xbtn from '../../assets/log_pages/X-button.svg';
 import './ViewJobMore.css';
 
 const ViewJobMore = ({job, image=Logo, handleViewMore}) => {
-
   const navigate = useNavigate();
   const [token, setToken] = useState('');
   const [aplicationExist, setApplicationExist] = useState(false);

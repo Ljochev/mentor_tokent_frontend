@@ -1,8 +1,37 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../components/Button';
 import './ContactPage.css';
 
 const ContactPage = () => {
+
+const [fullName, setFullName] = useState('');
+const [email, setEmail] = useState('');
+const [message, setMessage] = useState('');
+
+const sendMessage = async (e) => {
+  e.preventDefault();
+  try {
+    const contactMessageResponse = await fetch('/api/contactMessage' , {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        fullName,
+        message,
+        email,
+      }),
+    });
+    const contactMessage = await contactMessageResponse.json();
+    if (contactMessage) {
+      alert(`Message was sent to Mentor Token!`);
+    } else {
+      alert(`Error, message was not sent to Mentor Token!`);
+    }
+  } catch (error) {
+    console.log("This is the error: ", error);
+  }
+  };
 
   return (
   <main>
@@ -17,14 +46,42 @@ const ContactPage = () => {
            and one of our team members will get back to you as soon as possible.</p>
         <span>Let’s create something amazing together!</span>
       </div>
-      <form className='lets_talk_form'>
+      <form className='lets_talk_form' onSubmit={sendMessage}>
         <div className='lets_talk_name_email'>
-        <input type="text" name='fullName' placeholder='Full Name' />
-        <input type='email' name='email' placeholder='Email adress' />
+        <input 
+        value={fullName}
+        onChange={(e) => setFullName(e.target.value)}
+        id='fullName'
+        type="text" 
+        name='fullName' 
+        placeholder='Full Name' 
+        required/>
+        <input
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        id='email'
+        type='email' 
+        name='email' 
+        placeholder='Email address' 
+        required/>
         </div>
-        <textarea  type='text' name='message' placeholder='Your message'/>
+        <div className="text_area">
+        <textarea
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        id=''
+        type='text' 
+        name='message' 
+        placeholder='Your message'
+        maxlength="1000" 
+        required/>
+        <p>{message.length}/1000</p>
+        </div>
         <div className='form_button'>
-        <Button name={'SEND MESSAGE'}/>
+        <Button 
+        name={'SEND MESSAGE'}
+        // mySubmit={(e) => {e.preventDefault(), sendMessage()}}
+        />
         </div>
       </form>
     </div>

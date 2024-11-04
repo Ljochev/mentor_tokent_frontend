@@ -81,7 +81,7 @@ const QickOverview = ({mentorId = null, companyId = null, handleSelection, descr
             const jobsApplied = jobAplications.filter(job => job.applicationType === 'mentorToCompany');
             settotalApplications(jobsApplied.length);
             const jobsDone = jobAplications.filter(job => job.acceptedStatus === 'done');
-            console.log("Here is the data that shows how much done jobs is from mentor"); 
+            // console.log("Here is the data that shows how much done jobs is from mentor"); 
             setFinishedJobs(jobsDone.length);
           } 
           if (companyAplications.length > 0) { // find all jobs (pending, done and in progress)
@@ -96,6 +96,7 @@ const QickOverview = ({mentorId = null, companyId = null, handleSelection, descr
                 mentors.push(app.mentorId);
               }
             })
+            // console.log(mentors);
             setTotalMentors(mentors.length);
           } 
         }

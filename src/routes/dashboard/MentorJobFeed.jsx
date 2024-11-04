@@ -138,7 +138,7 @@ const MentorJobFeed = () => {
 
   const handleViewMore = (job=undefined) => {
     setEditCart(!editCart);
-    console.log(job);
+    // console.log(job);
     if(job && job !== ('Aplication already created for this job' || 'Aplication was created' )){
       setJobApply(job);
     } 
@@ -209,7 +209,7 @@ const MentorJobFeed = () => {
 
   return (
     <div className="mentor_jobfeed">
-      {editCart && <ViewJobMore job={jobApply} handleViewMore={handleViewMore}/> }
+      {editCart && <ViewJobMore job={jobApply} image={jobApply.image} handleViewMore={handleViewMore}/> }
       <div className="company_jobs">
         <h2>Your Startup Jobs</h2>
         <div className="job_feed_filter_section">

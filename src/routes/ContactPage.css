@@ -99,6 +99,16 @@ padding: 9px 26px;
   justify-content:right;
   /* border: 1px solid black; */
 }
+.text_area {
+  position: relative;
+}
+.text_area p{
+position: absolute;
+right: 15px;
+bottom: 0px;
+color: rgba(128, 128, 128, 0.5);
+font-size: 0.8em;
+}
 
 textarea{
   resize: none;
