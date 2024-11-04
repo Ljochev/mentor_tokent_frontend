@@ -8,7 +8,6 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "https://mentor-token-backend.vercel.app",
-        // target: "https://mentor-token-backend.vercel.app",
         changeOrigin: true,
         secure: false, 
       },
