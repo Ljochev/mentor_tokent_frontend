@@ -25,6 +25,7 @@ Features
 
 Getting Started
 
+
 To set up the project locally, follow these steps:
 
 Prerequisites
