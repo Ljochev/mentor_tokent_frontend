@@ -18,7 +18,7 @@ const UserStats = ({title='mentor', handleEditMentor,handleExitMentor, edit, men
   
     const getUser = async () => {
         try {
-          const userResponse = await fetch(`/api/user`, {
+          const userResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const UserStats = ({title='mentor', handleEditMentor,handleExitMentor, edit, men
 
     const getMentor = async (mentor) => {
       try {
-        const userResponse = await fetch(`/api/user/mentorId/${mentor}`, {
+        const userResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/mentorId/${mentor}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

@@ -73,7 +73,7 @@ const RegisterPage = () => {
       throw new Error('Failed to login. Please enter valid email format');
   } 
   try {
-    const response = await fetch('/api/user/checkEmail', {
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/checkEmail`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

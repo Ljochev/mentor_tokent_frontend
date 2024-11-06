@@ -59,7 +59,7 @@ const RegisterCompany = ({
     e.preventDefault();
     if (policyTerms) {
             try {
-              const response = await fetch('/api/user/register', {
+              const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/register`, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

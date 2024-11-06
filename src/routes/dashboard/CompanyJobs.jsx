@@ -12,7 +12,7 @@ const CompanyJobs = () => {
 
   const fetchCompany = async () => {
     try {
-      const myUser = await fetch(`/api/user`, {
+      const myUser = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const CompanyJobs = () => {
 
  const getOpenCompanyJobs = async () => {
   try {
-    const jobsData = await fetch(`/api/job/company/open`, {
+    const jobsData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/company/open`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

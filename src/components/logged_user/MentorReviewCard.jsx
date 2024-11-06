@@ -17,7 +17,7 @@ const MentorReviewCard = ({mentor = {}, handleViewMentor, jobAplication = {}, ty
     acceptedStatus = 'rejected';
   }
   try {
-    const aplicationEdit = await fetch(`/api/company/application/${appId}`, {
+    const aplicationEdit = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/application/${appId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

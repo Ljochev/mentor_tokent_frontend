@@ -27,7 +27,7 @@ const SearchBar = ({accountType, token = ''}) => {
         useEffect(() => {
             const searchUserByName = async (name) => {
               try {
-                const usersData = await fetch(`/api/user/${accountType}/${name}`, {
+                const usersData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/${accountType}/${name}`, {
                   method: 'GET',
                   headers: {
                     'Content-Type': 'application/json',

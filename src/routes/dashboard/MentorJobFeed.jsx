@@ -37,7 +37,7 @@ const MentorJobFeed = () => {
 
   const getCompanyById = async (id) => {
     try {
-      const companyResponse = await fetch(`/api/user/companyId/${id}`, {
+      const companyResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/companyId/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const MentorJobFeed = () => {
 
   const getOpenCompaniesJobs = async () => {
     try {
-      const jobsResponse = await fetch(`/api/job/allCompanies`, {
+      const jobsResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/allCompanies`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const MentorJobFeed = () => {
 
   const getOpenJobsByCompany = async (companyId) => {   
     try {
-      const jobsResponse = await fetch(`/api/job/all/${companyId}`, {
+      const jobsResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/all/${companyId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -85,7 +85,7 @@ const MentorJobFeed = () => {
 
   const getCompanies = async (query='') => {
     try {
-      const companiesResponse = await fetch(`/api/user/companies${query}`, {
+      const companiesResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/companies${query}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ useEffect(() => {
 useEffect(() => {
   const fetchAllMentors = async () => {
     try {
-      const mentorsResponse = await fetch(`/api/user/mentors`, {
+      const mentorsResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/mentors`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ useEffect(() => {
 useEffect(() => {
   const fetchMentorStats = async (selectedMentor) => {
     try {
-      const applicationsResponse = await fetch(`/api/company/mentorApplications/${selectedMentor._id}/done`, {
+      const applicationsResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/mentorApplications/${selectedMentor._id}/done`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ const AplicationSentCard = ({job=null, isPendingOffer = false, handleRefreshPend
 const cancelJobOffer = async (JobId, AppId) => {
   
     try {
-      const deletedJobResponse = await fetch(`/api/job/${JobId}`, {
+      const deletedJobResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/${JobId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ const cancelJobOffer = async (JobId, AppId) => {
       });
       const deletedJob = await deletedJobResponse.json();
 
-      const deletedAplicationResponse = await fetch(`/api/company/application/${AppId}`, {
+      const deletedAplicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/application/${AppId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

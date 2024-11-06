@@ -49,7 +49,7 @@ const EditMentor = ({handleEditMentor, user}) => {
   };
   const editUser = async () => {
     try {
-      const userResponse = await fetch(`/api/user`, {
+      const userResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

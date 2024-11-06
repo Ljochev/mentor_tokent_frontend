@@ -12,7 +12,7 @@ const CompanyCard = ({job = {},  viewGrid=true,  handleViewMore = () => {}, user
   const fetchAplications = async (ID) => {
 
     try {
-      const aplicationsData = await fetch(`/api/company/job/pendingApps/${ID}`, {
+      const aplicationsData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/job/pendingApps/${ID}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const CompanyCard = ({job = {},  viewGrid=true,  handleViewMore = () => {}, user
 
   const fetchMentor = async (mentorId) => {
     try {
-      const mentorData = await fetch(`/api/user/mentorId/${mentorId}`, {
+      const mentorData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/mentorId/${mentorId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

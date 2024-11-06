@@ -20,7 +20,7 @@ const QickOverview = ({mentorId = null, companyId = null, handleSelection, descr
 
     const fetchMentorAssignedJobs = async (mentorId = null, date = null) => {
         try {
-          const applicationResponse = await fetch(`/api/mentor/dateApplications/${mentorId}/${date}`, {
+          const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/dateApplications/${mentorId}/${date}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const QickOverview = ({mentorId = null, companyId = null, handleSelection, descr
     
       const getCompanyAppsFromDate = async (date) => {
         try {
-          const applicationResponse = await fetch(`/api/company/dateApplications/${date}`, {
+          const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/dateApplications/${date}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',

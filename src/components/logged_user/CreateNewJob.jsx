@@ -14,7 +14,7 @@ const CreateNewJob = ({exitEdit, isDirectJob = true, mentorId = null , refreshFe
 
 const createNewOpenJob = async (e) => {
   try {
-    const newJobData = await fetch(`/api/job`, {
+    const newJobData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ console.log("This is the error: ", error);
     const createNewDirectJob = async (e) => {
   e.preventDefault();
       try {
-        const newJobData = await fetch(`/api/job`, {
+        const newJobData = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ console.log("This is the error: ", error);
           }),
         });
         const newJob = await newJobData.json();
-        const newDirectAplicationData= await fetch(`/api/company/application/${newJob._id}/${mentorId}`,{
+        const newDirectAplicationData= await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/application/${newJob._id}/${mentorId}`,{
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

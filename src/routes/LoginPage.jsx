@@ -23,7 +23,7 @@ const handleLook = (e) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/user/login' , {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/login` , {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

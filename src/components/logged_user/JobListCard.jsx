@@ -34,7 +34,7 @@ const JobListCard = ({title=null, acceptedStatus=null, isCompanyMentor = false, 
 
     const updateFinishedAplication = async (aplicationId) => {
                 try {
-                  const aplicationEdit = await fetch(`/api/mentor/application/${aplicationId}`, {
+                  const aplicationEdit = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/application/${aplicationId}`, {
                     method: 'PUT',
                     headers: {
                       'Content-Type': 'application/json',

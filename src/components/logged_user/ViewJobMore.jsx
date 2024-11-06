@@ -11,7 +11,7 @@ const ViewJobMore = ({job, image=Logo, handleViewMore}) => {
 
   const getApplication = async (jobId) => {   
     try {
-      const applicationResponse = await fetch(`/api/mentor/jobApplication/${jobId}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/jobApplication/${jobId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const ViewJobMore = ({job, image=Logo, handleViewMore}) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`/api/mentor/application/${jobId}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/application/${jobId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

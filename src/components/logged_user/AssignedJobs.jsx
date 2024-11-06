@@ -12,7 +12,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
 
     const fetchMentorAssignedJobs = async (filter = 'all', mentorId) => {
     try {
-      const applicationResponse = await fetch(`/api/mentor/application/${mentorId}/${filter}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/application/${mentorId}/${filter}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
       const idList = applicationData.map(application => application.jobId);
       setJobs([]);
       if (idList.length > 0) {
-        const allJobs = await fetch(`/api/job/ids/${idList}`, {
+        const allJobs = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/ids/${idList}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
 
   const fetchAssignedCompanyJobs = async (filter = 'all') => {
     try {
-      const applicationResponse = await fetch(`/api/company/application/${filter}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/application/${filter}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
       const idList = applicationData.map(application => application.jobId);
       setJobs([]);
       if (idList.length > 0) {
-        const allJobs = await fetch(`/api/job/ids/${idList}`, {
+        const allJobs = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/ids/${idList}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
 
   const fetchCompanyMentorJobs = async (mentorId, filter = 'all') => {
     try {
-      const applicationResponse = await fetch(`/api/company/mentorApplications/${mentorId}/${filter}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/mentorApplications/${mentorId}/${filter}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const AssignedJobs = ({companyId=null, mentorId=null, renewData, handleSelectedF
       const idList = applicationData.map(application => application.jobId);
       setJobs([]);
       if (idList.length > 0) {
-        const allJobs = await fetch(`/api/job/ids/${idList}`, {
+        const allJobs = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/ids/${idList}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

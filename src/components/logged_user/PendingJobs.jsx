@@ -11,7 +11,7 @@ const PendingJobs = ({renewData, handleRenew}) => {
 
   const fetchMentorAssignedJobs = async () => {
     try {
-      const aplicationResponse = await fetch(`/api/mentor/application/null/pending`, {
+      const aplicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/application/null/pending`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ const PendingJobs = ({renewData, handleRenew}) => {
       setJobAplications(aplicationData);
       const idList = aplicationData.map(application => application.jobId);
       if(idList.length > 0) {
-      const allJobs = await fetch(`/api/job/ids/${idList}`, {
+      const allJobs = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/ids/${idList}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

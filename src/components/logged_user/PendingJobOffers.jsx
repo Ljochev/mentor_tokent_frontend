@@ -13,7 +13,7 @@ const handleRefreshPending = () => {
 };
     const fetchPendingDirectJobs = async () => {
         try {
-          const applicationResponse = await fetch(`/api/directAplications/${mentorId}`, {
+          const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/directAplications/${mentorId}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ const handleRefreshPending = () => {
           const idList = applicationData.map(application => application.jobId);
           setJobs([]);
           if (idList.length > 0) {
-            const allJobs = await fetch(`/api/job/ids/${idList}`, {
+            const allJobs = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/job/ids/${idList}`, {
               method: 'GET',
               headers: {
                 'Content-Type': 'application/json',

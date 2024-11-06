@@ -14,7 +14,7 @@ const PendingJobCard = ({ title = null, jobId, aplicationId, handleRenew}) => {
     acceptedStatus = 'rejected';
   }
   try {
-    const aplicationEdit = await fetch(`/api/mentor/application/${appId}`, {
+    const aplicationEdit = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/application/${appId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

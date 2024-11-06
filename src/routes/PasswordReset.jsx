@@ -36,7 +36,7 @@ const PasswordReset = () => {
 
   const handleResetLink = async () => {
     try {
-      const emailSendResponse = await fetch('/api/user/passwordResetLink' , {
+      const emailSendResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/passwordResetLink` , {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const PasswordReset = () => {
 
     const handleTokenEmailCheck = async (token) => {
       try {
-        const userResponse = await fetch(`/api/user/checkResetToken/${token}` , {
+        const userResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/checkResetToken/${token}` , {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const PasswordReset = () => {
       const handleResetPassword = async () => {
         try {
           if(newPassword === confirmNewPassword) {
-            const passwordResetResponse = await fetch(`/api/user/resetPassword/${resetToken}` , {
+            const passwordResetResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/resetPassword/${resetToken}` , {
               method: 'PUT',
               headers: {
                 'Content-Type': 'application/json',

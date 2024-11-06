@@ -27,7 +27,7 @@ const SidebarLayout = ({type, children}) => {
 
     const fetchUser = async () => {
       try {
-        const myUser = await fetch(`/api/user`, {
+        const myUser = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const SidebarLayout = ({type, children}) => {
 
     const editImage = async (picture) => {
       try {
-        const userResponse = await fetch(`/api/user`, {
+        const userResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

@@ -34,7 +34,7 @@ const Statistics = ({mentorId = null, filter = 'all'}) => {
 
   const fetchMentorAssignedJobs = async (mentorId, lastYearDate) => {
     try {
-      const applicationResponse = await fetch(`/api/mentor/dateApplications/${mentorId}/${lastYearDate.toISOString()}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/mentor/dateApplications/${mentorId}/${lastYearDate.toISOString()}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const Statistics = ({mentorId = null, filter = 'all'}) => {
 
   const fetchCompanyAssignedJobs = async (lastYearDate) => {
     try {
-      const applicationResponse = await fetch(`/api/company/dateApplications/${lastYearDate.toISOString()}`, {
+      const applicationResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/company/dateApplications/${lastYearDate.toISOString()}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

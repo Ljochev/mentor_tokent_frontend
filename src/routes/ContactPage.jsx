@@ -11,7 +11,7 @@ const [message, setMessage] = useState('');
 const sendMessage = async (e) => {
   e.preventDefault();
   try {
-    const contactMessageResponse = await fetch('/api/contactMessage' , {
+    const contactMessageResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contactMessage` , {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -8,7 +8,7 @@ const MentorCardBox = ({handleViewMentor}) => {
 
 const fetchAllMentors = async () => {
   try {
-    const mentorsResponse = await fetch(`/api/user/mentors`, {
+    const mentorsResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/user/mentors`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
